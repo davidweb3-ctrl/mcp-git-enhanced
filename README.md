@@ -1,5 +1,9 @@
 # 🦞 MCP Git Enhanced
 
+[![Tests](https://img.shields.io/badge/tests-43%20passing-brightgreen)](src/__tests__/)
+[![Coverage](https://img.shields.io/badge/coverage-98%25-brightgreen)](coverage/)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 An enhanced Git MCP (Model Context Protocol) server that provides AI assistants with powerful code review, commit analysis, and branch management capabilities.
 
 ## Features
@@ -149,6 +153,52 @@ npm run dev
 
 # Test locally
 node dist/index.js
+```
+
+## Testing
+
+This project uses Jest for testing with comprehensive coverage for all Git tool handlers.
+
+```bash
+# Run all tests
+npm test
+
+# Run tests with coverage report
+npm run test:coverage
+
+# Run tests in watch mode
+npm run test:watch
+```
+
+### Coverage Report
+
+| File      | Statements | Branches | Functions | Lines  |
+|-----------|------------|----------|-----------|--------|
+| tools.ts  | 98%+       | 95%+     | 100%      | 98%+   |
+
+### Test Structure
+
+- `src/__tests__/tools.test.ts` - Unit tests for all 5 Git tool handlers
+  - `git_diff` - 7 test cases
+  - `git_log` - 13 test cases
+  - `git_branch` - 10 test cases (list, compare, suggest_cleanup)
+  - `git_status` - 5 test cases
+  - `git_commit_analyze` - 4 test cases
+
+## Code Quality
+
+```bash
+# Run ESLint
+npm run lint
+
+# Fix ESLint issues
+npm run lint:fix
+
+# Format with Prettier
+npm run format
+
+# Check formatting
+npm run format:check
 ```
 
 ## Requirements

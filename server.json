@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.davidweb3-ctrl/mcp-git-enhanced",
+  "description": "Enhanced Git MCP Server - Code review, commit analysis, and branch management",
+  "repository": {
+    "url": "https://github.com/davidweb3-ctrl/mcp-git-enhanced",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@bountyclaw/mcp-git-enhanced",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
