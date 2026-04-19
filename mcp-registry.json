@@ -1,0 +1,41 @@
+{
+  "name": "@bountyclaw/mcp-git-enhanced",
+  "version": "1.0.0",
+  "description": "Enhanced Git MCP Server - Code review, commit analysis, and branch management",
+  "homepage": "https://github.com/davidweb3-ctrl/mcp-git-enhanced",
+  "author": {
+    "name": "BountyClaw",
+    "url": "https://github.com/davidweb3-ctrl"
+  },
+  "license": "MIT",
+  "categories": ["developer-tools", "version-control"],
+  "tags": ["git", "code-review", "diff", "commit-analysis", "branch-management"],
+  "install": {
+    "npm": {
+      "package": "@bountyclaw/mcp-git-enhanced"
+    }
+  },
+  "runtime": "node",
+  "tools": [
+    {
+      "name": "git_diff",
+      "description": "Analyze code changes between commits, branches, or working directory"
+    },
+    {
+      "name": "git_log",
+      "description": "Analyze commit history with filtering and statistics"
+    },
+    {
+      "name": "git_branch",
+      "description": "Manage and analyze git branches"
+    },
+    {
+      "name": "git_status",
+      "description": "Get comprehensive repository status"
+    },
+    {
+      "name": "git_commit_analyze",
+      "description": "Analyze a specific commit in detail"
+    }
+  ]
+}
