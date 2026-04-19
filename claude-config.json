@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "git-enhanced": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "env": {},
+      "description": "Enhanced Git operations for code review and repository analysis"
+    }
+  }
+}
